@@ -8,6 +8,6 @@ net.trainParam.epochs=15000000;
 net.trainParam.goal=0.0001; 
 LP.lr=0.1; 
 net=train(net,P',T); %net和输入集行数必须相等
-sim(net,P')
+sim(net,P')%尚不清楚作用，经多次训练后发现去掉对结果影响不大
 x=[1 2 3 4 5 6];
 plot(x,T,'B+',x,ans,'g*')
